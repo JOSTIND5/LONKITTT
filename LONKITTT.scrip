@@ -1,0 +1,6 @@
+git init
+git add .
+git commit -m "Subiendo el juego"
+git branch -M main
+git remote add origin https://github.com/TU_USUARIO/JuegoMascota.git
+git push -u origin main
