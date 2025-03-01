@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cuida tu Mascota</h1>
+        <div id="seleccionMascota">
+            <h2>Elige tu mascota:</h2>
+            <button onclick="elegirMascota('gato')">Gato</button>
+            <button onclick="elegirMascota('perro')">Perro</button>
+            <button onclick="elegirMascota('conejo')">Conejo</button>
+        </div>
+        
+        <div id="juego" style="display: none;">
+            <h2 id="nombreMascota">Nombre: </h2>
+            <img id="imagenMascota" src="" alt="Mascota">
+            
+            <p>Hambre: <span id="hambre">100</span></p>
+            <p>Higiene: <span id="higiene">100</span></p>
+
+            <button onclick="alimentar()">🍖 Alimentar</button>
+            <button onclick="bañar()">🛁 Bañar</button>
+            <button onclick="irAlBaño()">🚽 Ir al baño</button>
+
+            <h3>Juega con un amigo:</h3>
+            <button onclick="compartirJuego()">🔗 Compartir Enlace</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
